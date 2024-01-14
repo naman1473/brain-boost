@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #ADD8E6; /* Light blue background */
+  text-align: center;
+  padding: 15px;
+}
+
+#title {
+  color: #000000; /* Black color */
+  font-weight: bold; /* Make the text bold */
+  margin-bottom: 20px;
+}
+
+/* Styled toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin-bottom: 20px; 
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.button {
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+  border: 2px solid #000000;
+  border-radius: 4px; /* Rounded corners */
+  padding: 10px 10px;
+  font-size: 12px;
+  margin: 4px auto; /* Auto margins for horizontal centering */
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 100%; /* Adjust button width as per your preference */
+  box-sizing: border-box; /* Include padding and border in the width */
+}
+
+.button:hover {
+  background-color: #ADD8E6; /* Light blue background on hover */
+  color: #000000; /* Keep text black for readability */
+}
+
+#settingsButton {
+  margin-top: 15px;
+}
